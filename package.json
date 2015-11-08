@@ -12,6 +12,7 @@
   },
   "keywords": [
     "redux",
+    "react",
     "request",
     "http",
     "fetch",
