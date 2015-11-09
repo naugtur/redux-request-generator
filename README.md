@@ -16,7 +16,8 @@ combineReducers({
 ```js
 definition:= {
     requestGenerator: (args) => (url or Request object),
-    mapper: (data) => (data)
+    condition: (state) => (boolean), //optional
+    mapper: (data) => (data) //optional
 }
 ```
 

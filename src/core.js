@@ -1,18 +1,12 @@
+const T = {
+    REQUEST_ERROR: "@@request_error",
+    REQUEST_START: "@@request_start",
+    REQUEST_END: "@@request_end"
+}
+
+export {T as actionTypes}
+
 export default function reduxRequest(requestImplementation){
-
-    const T = {
-        REQUEST_ERROR: "@@request_error",
-        REQUEST_START: "@@request_start",
-        REQUEST_END: "@@request_end"
-    }
-
-
-    //definitions:
-    // { keyInState: {
-    //       requestGenerator: (...args) => (url),
-    //       mapper: (data, ...args) => (data)
-    //   }
-    // }
 
     return function defineRequests(definitions, defaults = {}) {
         let reducers = {}
@@ -58,9 +52,9 @@ export default function reduxRequest(requestImplementation){
     }
 
     function createFetchAction(stateKey, options, defaults) {
-        return function fetchIfNeeded(...args) {
+        return function fetchAction(...args) {
             return (dispatch, getState) => {
-                if (!(getState()[stateKey].isFetching)) {
+                if (!options.condition || options.condition(getState()[stateKey])) {
                     return dispatch(fetchData(options.requestGenerator(...args), stateKey, options.mapper, args, defaults))
                 }
             }
