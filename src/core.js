@@ -25,11 +25,12 @@ export default function reduxRequest(requestImplementation){
                     })
                 },
                 [T.REQUEST_END]: (state, {data}) => ({
-                    isFetching: false,
-                    data
+                        isFetching: false,
+                        data: Object.assign({}, state.data, data)
                 }),
                 [T.REQUEST_ERROR]: (state, {error}) => {
                     return Object.assign({}, state, {
+                        isFetching: false,
                         error
                     })
                 }

@@ -2,3 +2,6 @@ node_modules
 *.log
 *.err
 .DS_Store
+coverage
+*.log
+lib

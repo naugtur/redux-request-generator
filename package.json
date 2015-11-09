@@ -2,8 +2,9 @@
   "name": "redux-request",
   "version": "1.0.0",
   "description": "Boilerplate-free http requests for redux apps",
-  "main": "fetch.js",
+  "main": "lib/fetch.js",
   "scripts": {
+    "prepublish": "rimraf lib && babel --presets es2015 -d lib/ src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "license": "MIT",
   "dependencies": {
     "xhr": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.2"
   }
 }
