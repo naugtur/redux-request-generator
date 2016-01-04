@@ -2,8 +2,17 @@
 
 One function that creates actions and reducers for your http requests.
 
+**Browser support**
+
+By default `fetch` is used, so it has to be there (or shimmed)
+
+If you're considering shimming fetch, use `require('redux-request/xhr')` instead. It uses xhr for making http requests.
+
+No support for IE8 or IE9, but you should be able to get it to work.
+
 ## Usage
 ```js
+const defineRequests = require('redux-request')
 const {actions, reducers} = defineRequests(definitions, defaults)
 
 //use in your app
@@ -38,7 +47,7 @@ const {actions, reducers} = defineRequests({
 ```js
 const createStoreWithMiddleware = applyMiddleware([thunk])(createStore)
 const reducer = combineReducers({
-    myField: myReducer,
+    myField: myCustomReducer,
     ...reducers
 })
 const store = createStoreWithMiddleware(reducer)
