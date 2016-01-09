@@ -60,4 +60,4 @@ store.dispatch(actions.books("JRRTolkien"))
 4. Use the key (`books`) in a component. Show loading indicator while `isFetching` is true. `state.books` will contain:
  - `isFetching` - set to true while the request is waiting for response
  - `error` - error object if there was an error fetching data `{statusCode, messages}`
- - `data` - whatever `mapper` returned after the response came in.
+ - `data` - response or whatever `mapper` returned after the response came in. *Must be an object*

@@ -44,7 +44,7 @@ export default function reduxRequest(requestImplementation){
             } else {
                 return (state || {
                     isFetching: false,
-                    data: []
+                    data: {}
                 })
             }
         }
