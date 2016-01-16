@@ -11,7 +11,7 @@ function App(props) {
         asyncCall(props.dispatch,fetchActions.aList)
         return <AList/>
     case "aItem" :
-        asyncCall(props.dispatch,fetchActions.aItems, props.location.options.app)
+        asyncCall(props.dispatch,fetchActions.aItems, props.location.options.itemName)
         return <AItem itemName={props.location.options.itemName}/>
     default :
         return <div>Not implemented</div>
