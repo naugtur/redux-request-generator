@@ -1,5 +1,7 @@
 # redux-request
 
+*This is not yet released. API or the way it integrates into redux might change. Feedback welcome.*
+
 One function that creates actions and reducers for your http requests.
 
 **Browser support**
