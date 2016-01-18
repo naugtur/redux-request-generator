@@ -4,6 +4,11 @@
 
 One function that creates actions and reducers for your http requests.
 
+**How is it different?**
+
+* not a middleware
+* has tests
+
 **Browser support**
 
 By default `fetch` is used, so it has to be there (or shimmed)
