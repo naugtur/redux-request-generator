@@ -4,13 +4,13 @@
   "description": "Boilerplate-free http requests for redux apps",
   "main": "lib/fetch.js",
   "scripts": {
-   "build": "babel src --out-dir lib",
-   "prepublish": "rimraf lib && npm run build",
-   "test": "mocha --compilers js:babel-core/register --require should --reporter spec test/*.js"
+    "build": "babel src --out-dir lib",
+    "prepublish": "rimraf lib && npm run build",
+    "test": "mocha --compilers js:babel-core/register --require should --reporter spec test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "later"
+    "url": "git@github.com:naugtur/redux-request.git"
   },
   "keywords": [
     "redux",
@@ -31,6 +31,7 @@
     "babel-plugin-add-module-exports": "^0.1.1",
     "babel-preset-es2015": "^6.1.18",
     "mocha": "^2.3.3",
+    "pre-commit": "^1.1.2",
     "should": "^7.1.1",
     "sinon": "^1.17.2"
   }
