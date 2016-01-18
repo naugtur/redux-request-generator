@@ -1,6 +1,6 @@
 {
   "name": "redux-request",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Boilerplate-free http requests for redux apps",
   "main": "lib/fetch.js",
   "scripts": {
