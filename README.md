@@ -1,4 +1,4 @@
-# redux-request
+# redux-request-generator
 
 *This is not yet released. API or the way it integrates into redux might change. Feedback welcome.*
 
@@ -8,13 +8,13 @@ One function that creates actions and reducers for your http requests.
 
 By default `fetch` is used, so it has to be there (or shimmed)
 
-If you're considering shimming fetch, use `require('redux-request/xhr')` instead. It uses xhr for making http requests.
+If you're considering shimming fetch, use `require('redux-request-generator/xhr')` instead. It uses xhr for making http requests.
 
 No support for IE8 or IE9, but you should be able to get it to work.
 
 ## Usage
 ```js
-const defineRequests = require('redux-request')
+const defineRequests = require('redux-request-generator')
 const {actions, reducers} = defineRequests(definitions, defaults)
 
 //use in your app

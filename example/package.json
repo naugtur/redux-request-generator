@@ -23,7 +23,7 @@
     "redux": "^3.0.4",
     "redux-actions": "^0.9.0",
     "redux-logger": "^2.0.4",
-    "redux-request": "../",
+    "redux-request-generator": "../",
     "redux-thunk": "^1.0.0",
     "uniloc": "^0.2.0"
   }

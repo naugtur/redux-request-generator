@@ -1,5 +1,5 @@
 {
-  "name": "redux-request",
+  "name": "redux-request-generator",
   "version": "1.0.0-rc.1",
   "description": "Boilerplate-free http requests for redux apps",
   "main": "lib/fetch.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:naugtur/redux-request.git"
+    "url": "git@github.com:naugtur/redux-request-generator.git"
   },
   "keywords": [
     "redux",

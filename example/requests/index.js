@@ -1,5 +1,5 @@
 
-const defineRequests = require('redux-request')
+const defineRequests = require('redux-request-generator')
 
 
 const {actions, reducers} = defineRequests({
